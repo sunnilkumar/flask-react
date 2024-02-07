@@ -3,7 +3,6 @@ from flask_cors import CORS, cross_origin
 
 
 api = Blueprint('starter',__name__,static_folder='../react-app/build',static_url_path='')
-cors = CORS(api)
 
 @api.route('/')
 def serve():
