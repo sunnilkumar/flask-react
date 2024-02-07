@@ -6,6 +6,7 @@ api = Blueprint('starter',__name__,static_folder='../react-app/build',static_url
 
 @api.route('/')
 def serve():
+    print("sdsdfs)
     return send_from_directory(api.static_folder, 'index.html')
     
 if __name__ == '__main__':
